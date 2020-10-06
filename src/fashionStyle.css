@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 65px;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 22%;
+    justify-content: space-around;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+nav h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.left{
+    margin-left: -90px;
+}
+
+.right{
+    margin-right: -90px;
+}
+
+.search{
+    display: flex; 
+    align-self: center;
+    margin-top: 3px;
+}
+
+li img{
+    height: 12px;
+    margin-right: 4px;
+}
+li .image{
+    position: absolute;
+    display: none;
+}
+
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url("./asset/img/fashion.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.jumbotron .text {
+    margin-top: 28%; 
+    margin-left: 8%;
+}
+.text h1 b{
+    font-size: 45px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.text p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.btn{
+    display: flex;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 200px;
+    padding: 0 30px;
+    justify-content: center;
+}
+
+
+@media screen and (max-width : 1000px){
+    nav ul li a, img{
+        display: none;
+    }
+
+    nav h1{
+        position: relative;
+        margin-left: 9%;
+    }
+
+    nav ul{
+        position: absolute;
+        display: contents;
+        /* width: 1%; */
+    }
+
+    li .image, .image1{
+        position: absolute;
+        display: flex;
+    }
+
+    .jumbotron .text{
+        margin-top: 35%;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    nav{
+        justify-content: space-around;
+    }
+    
+    nav ul li a, img{
+        display: none;
+    }
+    
+    nav ul{
+        position: absolute;
+        display: contents;
+    }
+    
+    .jumbotron{
+        background-position: 60%;
+    }
+
+    .jumbotron .text{
+        margin-top: 55%;
+    }
+
+    li .image, .image1{
+        position: absolute;
+        display: flex;
+    }
+}
+
+@media screen and (max-width : 576px){
+    nav{
+        justify-content: space-around;
+    }
+    
+    nav ul{
+        display: none;
+        position: absolute;
+        display: contents;
+    }
+
+    .jumbotron .text{
+        margin-top: 60%;
+    }
+    
+    li .image, .image1{
+        position: absolute;
+        display: flex;
+        margin-right: 30px;
+    }
+}
