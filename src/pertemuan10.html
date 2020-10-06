@@ -7,7 +7,7 @@
 <body>
     <div>
         <ul class="navbar">
-            <li><a href="javascript:history.back()">Go Back</a></li>
+            <li><a href="javascript:close.window();" id="btn" onclick="disable()">Go Back</a></li>
             <li><a href="../index.html">Home</a></li>
             <li><a href="pertemuan11.html">Next</a></li>
         </ul>
@@ -27,9 +27,15 @@
            </p> 
         </p>
         <li>Berikan contoh dalam bentuk tampilan website penggunaan IFRAME ?</li>
-        <iframe src="https://indarnirmala.wordpress.com" height="500px" width="900px"></iframe>
+        <iframe src="./pertemuan7.html" height="500px" width="900px"></iframe>
     </ol>
 
-
+    <script>
+        const disable = () => {
+            alert("Tombol dinonaktifkan \nKlik OK untuk kembali ke pertemuan 9\nKarna dari pertemuan 9 ke 10, membuka tab baru")
+            onclick(window.close())
+            document.getElementById("btn").disable = true
+        }
+    </script>
 </body>
 </html>
