@@ -62,7 +62,12 @@ li .image{
     background-image: url("./asset/img/fashion.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     position: absolute;
+    height: 100%;
+    width: auto;
+    /* background-size: 100%; */
     top: 0;
     bottom: 0;
     left: 0;
@@ -119,12 +124,28 @@ li .image{
         display: flex;
     }
 
+    .jumbotron{
+        background-image: url("./asset/img/fashion50%.jpg");
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+
     .jumbotron .text{
-        margin-top: 35%;
+        margin-top: 40%;
+        /* background-position: bottom; */
+        position: fixed;
     }
 }
 
 @media only screen and (max-width : 768px){
+    .jumbotron{
+        background-image: url("./asset/img/fashion800.jpg");
+        background-size: cover;
+        background-image: 70px;
+    }
+
     nav{
         justify-content: space-around;
     }
@@ -137,13 +158,9 @@ li .image{
         position: absolute;
         display: contents;
     }
-    
-    .jumbotron{
-        background-position: 60%;
-    }
 
     .jumbotron .text{
-        margin-top: 55%;
+        margin-top: 80%;
     }
 
     li .image, .image1{
@@ -152,11 +169,7 @@ li .image{
     }
 }
 
-@media screen and (max-width : 576px){
-    nav{
-        justify-content: space-around;
-    }
-    
+@media screen and (max-height : 576px){    
     nav ul{
         display: none;
         position: absolute;
@@ -164,7 +177,8 @@ li .image{
     }
 
     .jumbotron .text{
-        margin-top: 60%;
+        margin-top: 80%;
+        position: fixed;
     }
     
     li .image, .image1{
