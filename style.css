@@ -1,17 +1,23 @@
-/* Navbar */
-ul.navbar {
-    list-style-type: none;
+body {
     margin: 0;
     padding: 0;
+}
+
+
+/* Navbar */
+ul.navbar, li a {
+    list-style-type: none;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
     background-color: #333;
 }
 
-ul.navbar li {
+ul.navbar li{
     float: left;
 }
 
-ul.navbar li a {
+ul.navbar li a{
     display: block;
     color: white;
     text-align: center;
@@ -24,7 +30,57 @@ ul.navbar li a:hover {
 }
 body {
     height: 100%;
-    /* background-position: center;
-    background-size: cover; */
 }
 /* End Navbar */
+
+
+/* Button Navigation */
+
+.btn-navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.floatleft{
+    float: left;
+    margin-right: 20px;
+}
+
+.floatright{
+    float: right;
+    margin-left: 20px;
+}
+ul, .btn-bottom{
+    list-style: none;
+    
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.btn-bottom li{
+    display: flex;
+    justify-content: center;
+    margin-left: 37px;
+}
+
+.btn-bottom li a{
+    padding: 14px 49px;
+    width: 200px;
+}
+
+.btn-bottom li p{
+    margin-bottom: -8px;
+}
+
+
